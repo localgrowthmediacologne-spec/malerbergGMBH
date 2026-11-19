@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Maler Berg GmbH – Malermeisterbetrieb in Köln | Demo-Vorschau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #132227;
+      background-color: #f6f8f8;
+      overflow-x: hidden;
+    }
+    input[type="range"] {
+      accent-color: #b83b6f;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#b83b6f] selection:text-white">
+
+  <!-- Sichtbarer Demo-Hinweis-Balken oben -->
+  <div class="bg-[#0b1c21] text-[#eef4f5] text-xs border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#4ecdc4]"></span>
+        <span class="font-bold tracking-wider uppercase">Unverbindliche Demo-Seite</span>
+        <span class="text-[#b8ccd0] hidden sm:inline">– Konzept mit Preis-Vorfilter für Maler Berg GmbH (Köln)</span>
+      </div>
+      <a href="#kontakt" class="text-[#6be0d8] hover:text-white font-semibold underline underline-offset-4">
+        Breniger Str. 5 · Köln
+      </a>
+    </div>
+  </div>
+
+  <!-- Schlanke Kopfzeile -->
+  <header class="sticky top-0 z-40 bg-[#f6f8f8]/95 backdrop-blur border-b border-[#dde5e7]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+      <a href="#" class="flex items-center gap-3 min-w-0">
+        <img src="grafik_2.jpg" alt="Maler Berg GmbH Logo" class="h-11 sm:h-14 w-auto object-contain rounded-lg bg-white p-1 shrink-0" />
+        <span class="truncate">
+          <span class="block font-extrabold text-[#0f2930] text-sm sm:text-base leading-tight truncate">
+            Maler Berg GmbH
+          </span>
+          <span class="block text-[11px] text-[#52686e] truncate">
+            Inh. Ralf Berg · Köln-Zollstock &amp; Rodenkirchen
+          </span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-[#1e333a]">
+        <a href="#zertifikate" class="hover:text-[#b83b6f] transition-colors">Nachweise</a>
+        <a href="#leistungen" class="hover:text-[#b83b6f] transition-colors">Leistungen</a>
+        <a href="#ablauf" class="hover:text-[#b83b6f] transition-colors">Ablauf</a>
+        <a href="#kontakt" class="hover:text-[#b83b6f] transition-colors">Kontakt</a>
+      </nav>
+
+      <a href="tel:0221361461" class="inline-flex items-center gap-2 rounded-full bg-[#0f2930] hover:bg-[#183d47] text-white text-xs sm:text-sm font-semibold px-4 py-2.5 transition-colors shrink-0">
+        <span>0221 / 36 14 61</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero: Statement links + Kalkulator-Karte rechts -->
+  <section class="bg-[#0f2930] text-white pt-10 pb-14 sm:pt-16 sm:pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#6be0d8]">
+          <span>Innungsbetrieb seit 1994</span>
+          <span class="text-white/30">/</span>
+          <span>qih „sehr gut“ (500+ Bewertungen)</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-[3.4rem] font-extrabold tracking-tight leading-[1.08]">
+          Wir bringen <span class="text-[#f06ea3]">Farbe</span> und <span class="text-[#6be0d8] underline decoration-[#b83b6f] decoration-2 underline-offset-8">Meisterqualität</span> nach Köln.
+        </h1>
+
+        <p class="text-base sm:text-lg text-[#d2e0e3] leading-relaxed max-w-2xl">
+          Ob frischer Anstrich in Zollstock, edle Spachteltechnik in Rodenkirchen, TÜV-geprüfte Innendämmung oder schnelle Wasserschaden- und Schimmelsanierung – Ralf Berg und sein Team arbeiten sauber, pünktlich und verbindlich.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 pt-1 text-sm text-[#e4eff1]">
+          <span class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#6be0d8]"></span>
+            8 Fachbereiche aus einer Hand
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#f06ea3]"></span>
+            10 geprüfte Urkunden &amp; Nachweise
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#6be0d8]"></span>
+            Privat- &amp; Gewerbeobjekte
+          </span>
+        </div>
+      </div>
+
+      <!-- Rechts: Preis-Vorfilter & Anfrage -->
+      <div id="rechner" class="lg:col-span-5 bg-white text-[#132227] rounded-3xl p-5 sm:p-7 shadow-2xl border border-white/15">
+        <div class="flex items-start justify-between gap-3 pb-4 border-b border-[#e4ecee]">
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-[#b83b6f]">Preis-Vorfilter</span>
+            <h2 class="text-xl font-extrabold text-[#0f2930] mt-0.5">Richtwert &amp; Terminanfrage</h2>
+          </div>
+          <span class="text-[11px] font-semibold text-[#175e5a] bg-[#e5f6f4] px-2.5 py-1 rounded-full shrink-0">
+            Kostenlos &amp; unverbindlich
+          </span>
+        </div>
+
+        <form id="quoteForm" action="https://api.web3forms.com/submit" method="POST" class="mt-4 space-y-4">
+          <input type="hidden" name="access_key" value="DEIN_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Neue Anfrage Demo-Vorschau – Maler Berg GmbH" />
+          <input type="hidden" id="calcSummaryInput" name="kalkulation_details" value="" />
+
+          <div>
+            <label class="block text-xs font-bold text-[#3a4f56] mb-2">Leistung wählen</label>
+            <div class="grid grid-cols-2 gap-2" id="serviceButtons">
+              <button type="button" data-service="Innenanstrich" data-min="22" data-max="34"
+                class="service-btn rounded-xl border-2 border-[#b83b6f] bg-[#b83b6f] text-white text-xs font-bold py-2.5 px-3 transition-colors cursor-pointer">
+                Innenanstrich
+              </button>
+              <button type="button" data-service="Spachteltechnik" data-min="38" data-max="58"
+                class="service-btn rounded-xl border border-[#d2dde0] bg-[#f6f8f8] hover:border-[#0f2930] text-[#132227] text-xs font-semibold py-2.5 px-3 transition-colors cursor-pointer">
+                Spachteltechnik
+              </button>
+              <button type="button" data-service="Bodenbeläge" data-min="32" data-max="52"
+                class="service-btn rounded-xl border border-[#d2dde0] bg-[#f6f8f8] hover:border-[#0f2930] text-[#132227] text-xs font-semibold py-2.5 px-3 transition-colors cursor-pointer">
+                Bodenbeläge
+              </button>
+              <button type="button" data-service="Sanierung / Dämmung" data-min="45" data-max="72"
+                class="service-btn rounded-xl border border-[#d2dde0] bg-[#f6f8f8] hover:border-[#0f2930] text-[#132227] text-xs font-semibold py-2.5 px-3 transition-colors cursor-pointer">
+                Sanierung / Dämmung
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-[#f6f8f8] rounded-2xl p-4 border border-[#e0e8ea]">
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <label for="areaSlider" class="text-xs font-bold text-[#0f2930]">
+                Fläche: <span id="areaValue" class="text-[#b83b6f] text-sm">60 m²</span>
+              </label>
+              <span id="priceRange" class="text-xs sm:text-sm font-extrabold text-[#0f2930] bg-white px-2.5 py-1 rounded-lg border border-[#dce5e7]">
+                ca. 1.320 € – 2.040 €
+              </span>
+            </div>
+            <input id="areaSlider" type="range" min="15" max="260" step="5" value="60" class="w-full cursor-pointer" />
+          </div>
+
+          <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-[#1e333a]">
+            <label class="inline-flex items-center gap-2 cursor-pointer">
+              <input id="optCover" type="checkbox" checked class="w-4 h-4 rounded border-[#b8c6ca]" />
+              <span>Abdeckschutz (+120 €)</span>
+            </label>
+            <label class="inline-flex items-center gap-2 cursor-pointer">
+              <input id="optFurniture" type="checkbox" class="w-4 h-4 rounded border-[#b8c6ca]" />
+              <span>Möbel-Rücken (+180 €)</span>
+            </label>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <input name="name" type="text" required placeholder="Ihr Name *"
+              class="w-full rounded-xl border border-[#d2dde0] bg-[#f6f8f8] px-3.5 py-2.5 text-sm focus:bg-white focus:outline-none focus:border-[#0f2930]" />
+            <input name="kontakt" type="text" required placeholder="Telefon oder E-Mail *"
+              class="w-full rounded-xl border border-[#d2dde0] bg-[#f6f8f8] px-3.5 py-2.5 text-sm focus:bg-white focus:outline-none focus:border-[#0f2930]" />
+          </div>
+
+          <input name="nachricht" type="text" placeholder="Stadtteil / Kurzinfo (z. B. Zollstock, 3 Zi.)"
+            class="w-full rounded-xl border border-[#d2dde0] bg-[#f6f8f8] px-3.5 py-2.5 text-sm focus:bg-white focus:outline-none focus:border-[#0f2930]" />
+
+          <button type="submit" class="w-full rounded-xl bg-[#b83b6f] hover:bg-[#9e2f5d] text-white font-bold text-sm py-3.5 px-5 transition-colors cursor-pointer">
+            Richtwert &amp; Rückruf anfordern
+          </button>
+
+          <p id="formFeedback" class="hidden text-xs font-medium rounded-xl px-3.5 py-2.5"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kennzahlen: Großformatige Typografie auf dunklem Streifen -->
+  <section class="bg-[#0b1f25] text-white py-10 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 lg:divide-x lg:divide-white/10">
+      <div class="lg:px-4 first:lg:pl-0">
+        <div class="text-3xl sm:text-4xl font-extrabold text-[#6be0d8]">30+ Jahre</div>
+        <div class="text-xs sm:text-sm text-[#c3d3d7] mt-1">Meister- &amp; Innungsbetrieb seit 1994</div>
+      </div>
+      <div class="lg:px-8">
+        <div class="text-3xl sm:text-4xl font-extrabold text-white">500+</div>
+        <div class="text-xs sm:text-sm text-[#c3d3d7] mt-1">Sehr gute qih-Kundenbewertungen</div>
+      </div>
+      <div class="lg:px-8">
+        <div class="text-3xl sm:text-4xl font-extrabold text-[#f58ab6]">10 Urkunden</div>
+        <div class="text-xs sm:text-sm text-[#c3d3d7] mt-1">TÜV SÜD, qih, GSU &amp; Fachseminare</div>
+      </div>
+      <div class="lg:px-8">
+        <div class="text-3xl sm:text-4xl font-extrabold text-white">Köln-Süd</div>
+        <div class="text-xs sm:text-sm text-[#c3d3d7] mt-1">Zollstock, Rodenkirchen &amp; Umgebung</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zertifikate: Filterbare Horizontal-Galerie + Vollbild-Ansicht -->
+  <section id="zertifikate" class="py-14 sm:py-20 bg-[#f6f8f8]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-7">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#b83b6f]">Geprüfte Nachweise</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-[#0f2930] tracking-tight mt-1">
+            Zertifikate &amp; Urkunden im Überblick
+          </h2>
+          <p class="text-sm text-[#52686e] mt-1.5">
+            Wischen oder Pfeile nutzen und auf ein Dokument klicken, um es groß zu betrachten.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2" id="certFilterBar">
+          <button type="button" data-cert-filter="all"
+            class="cert-filter-btn rounded-full bg-[#0f2930] text-white text-xs font-bold px-3.5 py-2 cursor-pointer">
+            Alle (10)
+          </button>
+          <button type="button" data-cert-filter="tuev"
+            class="cert-filter-btn rounded-full bg-white hover:bg-[#e5f6f4] text-[#1e333a] border border-[#d2dde0] text-xs font-semibold px-3.5 py-2 cursor-pointer">
+            TÜV &amp; Feuchte
+          </button>
+          <button type="button" data-cert-filter="qualitaet"
+            class="cert-filter-btn rounded-full bg-white hover:bg-[#e5f6f4] text-[#1e333a] border border-[#d2dde0] text-xs font-semibold px-3.5 py-2 cursor-pointer">
+            qih &amp; Innung
+          </button>
+          <button type="button" data-cert-filter="fach"
+            class="cert-filter-btn rounded-full bg-white hover:bg-[#e5f6f4] text-[#1e333a] border border-[#d2dde0] text-xs font-semibold px-3.5 py-2 cursor-pointer">
+            Brandschutz &amp; Boden
+          </button>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div id="certTrack" class="flex gap-4 overflow-x-auto no-scrollbar pb-3 snap-x snap-mandatory">
+          <article data-cat="qualitaet" onclick="openCert('gratulation.jpg', 'Gratulation: 500 sehr gute Kundenbewertungen (qih)')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="gratulation.jpg" alt="Gratulation 500 Kundenbewertungen qih" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#b83b6f]">
+              <span>qih Siegel</span>
+              <span>2024</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">500 Kundenbewertungen</h3>
+          </article>
+
+          <article data-cat="qualitaet" onclick="openCert('kundenbewertung_01_2.jpg', 'Zertifikat Qualität im Handwerk – sehr gut (qih)')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="kundenbewertung_01_2.jpg" alt="Zertifikat Qualität im Handwerk sehr gut" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#b83b6f]">
+              <span>qih „sehr gut“</span>
+              <span>Seit 2007</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">Qualität im Handwerk</h3>
+          </article>
+
+          <article data-cat="tuev" onclick="openCert('132c951194_2.jpg', 'TÜV SÜD Akademie – Abdichtung & Feuchtesanierung')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="132c951194_2.jpg" alt="TÜV SÜD Sachkundenachweis Abdichtung und Feuchtesanierung" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#175e5a]">
+              <span>TÜV SÜD</span>
+              <span>2016</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">Abdichtung &amp; Feuchte</h3>
+          </article>
+
+          <article data-cat="tuev" onclick="openCert('TUEV_Zertifikat_Innendaemmung_2.jpg', 'TÜV SÜD Akademie – Sachkunde für Innendämmung')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="TUEV_Zertifikat_Innendaemmung_2.jpg" alt="TÜV SÜD Zertifikat Sachkunde für Innendämmung" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#175e5a]">
+              <span>TÜV SÜD</span>
+              <span>2014</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">Sachkunde Innendämmung</h3>
+          </article>
+
+          <article data-cat="tuev" onclick="openCert('855254e765_2.jpg', 'Teilnahmeurkunde – Schimmelpilze in Innenräumen')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="855254e765_2.jpg" alt="Teilnahmeurkunde Schimmelpilze in Innenräumen" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#175e5a]">
+              <span>TÜV Rheinland</span>
+              <span>2013</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">Schimmelpilze innen</h3>
+          </article>
+
+          <article data-cat="qualitaet" onclick="openCert('f77461f578_2.jpg', 'GSU – Im Umweltschutz geprüfter Innungsbetrieb')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="f77461f578_2.jpg" alt="GSU Im Umweltschutz geprüfter Innungsbetrieb" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#b83b6f]">
+              <span>GSU / Innung</span>
+              <span>2015</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">Umweltschutz Innungsbetrieb</h3>
+          </article>
+
+          <article data-cat="qualitaet" onclick="openCert('Urkunde2025MalerBergGmbHD_2.jpg', 'Urkunde – Unterstützer Maler Nationalteam 2025')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="Urkunde2025MalerBergGmbHD_2.jpg" alt="Urkunde Unterstützer des Maler Nationalteams 2025" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#b83b6f]">
+              <span>Nachwuchs-Förderung</span>
+              <span>2025</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">Maler Nationalteam</h3>
+          </article>
+
+          <article data-cat="fach" onclick="openCert('brandschutz_01_2.jpg', 'Sika Unitherm – Brandschutzseminar')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="brandschutz_01_2.jpg" alt="Zertifikat Sika Unitherm Brandschutzseminar" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#175e5a]">
+              <span>Sika Unitherm</span>
+              <span>2009</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">Brandschutzseminar</h3>
+          </article>
+
+          <article data-cat="fach" onclick="openCert('bautrocknung_01_2.jpg', 'HEYLO – Bautrocknung & Wasserschadensanierung')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="bautrocknung_01_2.jpg" alt="Zertifikat Bautrocknung und Wasserschadensanierung" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#175e5a]">
+              <span>HEYLO</span>
+              <span>2008</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">Bautrocknung &amp; Wasser</h3>
+          </article>
+
+          <article data-cat="fach" onclick="openCert('bodenarbeiten_01_2.jpg', 'GRÜNDORF – Urkunde Boden-Fachverleger')"
+            class="cert-card snap-start shrink-0 w-56 sm:w-64 bg-white rounded-2xl border border-[#dce5e7] p-3.5 hover:border-[#b83b6f] transition-colors cursor-pointer">
+            <img src="bodenarbeiten_01_2.jpg" alt="Urkunde Boden-Fachverleger Gründorf" class="w-full h-72 object-cover rounded-xl bg-[#eef3f4]" />
+            <div class="mt-3 flex items-center justify-between text-[11px] font-bold text-[#175e5a]">
+              <span>GRÜNDORF</span>
+              <span>2007</span>
+            </div>
+            <h3 class="text-sm font-bold text-[#0f2930] mt-0.5">Boden-Fachverleger</h3>
+          </article>
+        </div>
+
+        <div class="flex items-center justify-end gap-2 mt-3">
+          <button type="button" onclick="scrollCerts(-1)" aria-label="Nach links scrollen"
+            class="w-10 h-10 rounded-full bg-white border border-[#d2dde0] hover:border-[#0f2930] flex items-center justify-center font-bold text-[#0f2930] cursor-pointer">
+            ←
+          </button>
+          <button type="button" onclick="scrollCerts(1)" aria-label="Nach rechts scrollen"
+            class="w-10 h-10 rounded-full bg-[#0f2930] hover:bg-[#183d47] flex items-center justify-center font-bold text-white cursor-pointer">
+            →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen: Interaktiver Split-Bereich (Tabs links + Fokus-Panel rechts) -->
+  <section id="leistungen" class="py-14 sm:py-20 bg-white border-y border-[#e0e8ea]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#b83b6f]">Alle 8 Leistungsbereiche</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-[#0f2930] tracking-tight mt-1">
+          Fachbereiche im direkten Fokus
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Linke Tab-Liste -->
+        <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2" id="leisTabs">
+          <button type="button" data-idx="0" class="leis-tab w-full text-left px-4 py-3 rounded-xl font-bold text-sm bg-[#0f2930] text-white flex items-center justify-between cursor-pointer">
+            <span>01 · Maler- &amp; Lackierarbeiten</span>
+            <span class="text-[#6be0d8]">→</span>
+          </button>
+          <button type="button" data-idx="1" class="leis-tab w-full text-left px-4 py-3 rounded-xl font-semibold text-sm bg-[#f6f8f8] hover:bg-[#e5f6f4] text-[#132227] flex items-center justify-between cursor-pointer">
+            <span>02 · Spachtel- &amp; Wischtechniken</span>
+            <span class="text-[#81959b]">→</span>
+          </button>
+          <button type="button" data-idx="2" class="leis-tab w-full text-left px-4 py-3 rounded-xl font-semibold text-sm bg-[#f6f8f8] hover:bg-[#e5f6f4] text-[#132227] flex items-center justify-between cursor-pointer">
+            <span>03 · Bodenbeläge &amp; Beschichtung</span>
+            <span class="text-[#81959b]">→</span>
+          </button>
+          <button type="button" data-idx="3" class="leis-tab w-full text-left px-4 py-3 rounded-xl font-semibold text-sm bg-[#f6f8f8] hover:bg-[#e5f6f4] text-[#132227] flex items-center justify-between cursor-pointer">
+            <span>04 · Schimmel- &amp; Feuchtesanierung</span>
+            <span class="text-[#81959b]">→</span>
+          </button>
+          <button type="button" data-idx="4" class="leis-tab w-full text-left px-4 py-3 rounded-xl font-semibold text-sm bg-[#f6f8f8] hover:bg-[#e5f6f4] text-[#132227] flex items-center justify-between cursor-pointer">
+            <span>05 · TÜV-geprüfte Innendämmung</span>
+            <span class="text-[#81959b]">→</span>
+          </button>
+          <button type="button" data-idx="5" class="leis-tab w-full text-left px-4 py-3 rounded-xl font-semibold text-sm bg-[#f6f8f8] hover:bg-[#e5f6f4] text-[#132227] flex items-center justify-between cursor-pointer">
+            <span>06 · Brandschutzbeschichtungen</span>
+            <span class="text-[#81959b]">→</span>
+          </button>
+          <button type="button" data-idx="6" class="leis-tab w-full text-left px-4 py-3 rounded-xl font-semibold text-sm bg-[#f6f8f8] hover:bg-[#e5f6f4] text-[#132227] flex items-center justify-between cursor-pointer">
+            <span>07 · Bautrocknung &amp; Wasserschaden</span>
+            <span class="text-[#81959b]">→</span>
+          </button>
+          <button type="button" data-idx="7" class="leis-tab w-full text-left px-4 py-3 rounded-xl font-semibold text-sm bg-[#f6f8f8] hover:bg-[#e5f6f4] text-[#132227] flex items-center justify-between cursor-pointer">
+            <span>08 · Fassaden- &amp; Altbausanierung</span>
+            <span class="text-[#81959b]">→</span>
+          </button>
+        </div>
+
+        <!-- Rechtes Detail-Panel -->
+        <div id="leisDetail" class="lg:col-span-7 bg-[#0f2930] text-white rounded-3xl p-6 sm:p-9">
+          <span id="leisBadge" class="inline-block text-xs font-bold uppercase tracking-widest text-[#6be0d8] mb-2">
+            Fachbereich 01
+          </span>
+          <h3 id="leisTitle" class="text-2xl sm:text-3xl font-extrabold">
+            Maler- &amp; Lackierarbeiten
+          </h3>
+          <p id="leisDesc" class="text-sm sm:text-base text-[#d2e0e3] mt-3 leading-relaxed">
+            Randscharfe Wand- und Deckenanstriche, saubere Lackierungen an Türen, Zargen, Fenstern und Heizkörpern sowie Tapezierarbeiten für Wohnungen, Häuser und Gewerbeflächen in Köln.
+          </p>
+          <ul id="leisPoints" class="mt-5 space-y-2 text-sm text-[#e8f2f4]">
+            <li>• Hochwertige Innen- und Außenfarben</li>
+            <li>• Sauberer Schutz von Böden, Möbeln und Beschlägen</li>
+            <li>• Termintreue Ausführung durch den Innungsbetrieb</li>
+          </ul>
+          <div class="mt-7 pt-5 border-t border-white/15 flex flex-wrap items-center justify-between gap-4">
+            <span id="leisPriceHint" class="text-xs sm:text-sm font-semibold text-[#f58ab6]">
+              Richtwert im Rechner: ca. 22 € – 34 € / m²
+            </span>
+            <a href="#rechner" class="rounded-xl bg-[#b83b6f] hover:bg-[#9e2f5d] text-white text-xs sm:text-sm font-bold px-4 py-2.5 transition-colors">
+              Im Rechner kalkulieren
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf: Kompakter horizontaler Zeitstrahl (01 -> 02 -> 03) -->
+  <section id="ablauf" class="py-14 sm:py-16 bg-[#f6f8f8]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-[#b83b6f]">Arbeitsweise</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#0f2930] mt-1">
+            Drei klare Schritte bis zum fertigen Ergebnis
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 border-t-2 border-[#0f2930] pt-6">
+        <div>
+          <div class="text-xs font-extrabold tracking-widest text-[#b83b6f]">SCHRITT 01</div>
+          <h3 class="text-lg font-bold text-[#0f2930] mt-1">Richtpreis &amp; Eckdaten prüfen</h3>
+          <p class="text-sm text-[#52686e] mt-1.5">Fläche und Leistung grob bestimmen und direkt einen unverbindlichen Terminwunsch senden.</p>
+        </div>
+        <div>
+          <div class="text-xs font-extrabold tracking-widest text-[#175e5a]">SCHRITT 02</div>
+          <h3 class="text-lg font-bold text-[#0f2930] mt-1">Vor-Ort-Check in Köln</h3>
+          <p class="text-sm text-[#52686e] mt-1.5">Ralf Berg prüft Untergründe, Feuchte oder Maße vor Ort und erstellt ein klares Angebot.</p>
+        </div>
+        <div>
+          <div class="text-xs font-extrabold tracking-widest text-[#b83b6f]">SCHRITT 03</div>
+          <h3 class="text-lg font-bold text-[#0f2930] mt-1">Saubere Ausführung &amp; Übergabe</h3>
+          <p class="text-sm text-[#52686e] mt-1.5">Zuverlässige Umsetzung nach Innungs- und Qualitätsstandards – ordentlich übergeben.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontakt" class="bg-[#0f2930] text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div>
+        <div class="font-extrabold text-lg">Maler Berg GmbH – Inh. Ralf Berg</div>
+        <p class="text-xs sm:text-sm text-[#c3d3d7] mt-1">
+          Breniger Straße 5, 50969 Köln (Zollstock / Rodenkirchen) · Tel.: 0221 / 36 14 61 · info@malerberg.de
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href="tel:0221361461" class="rounded-xl bg-white/10 hover:bg-white/15 text-white text-sm font-semibold px-4 py-2.5">
+          Anrufen
+        </a>
+        <a href="#rechner" class="rounded-xl bg-[#b83b6f] hover:bg-[#9e2f5d] text-white text-sm font-semibold px-4 py-2.5">
+          Richtpreis prüfen
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Zertifikat-Modal -->
+  <div id="certModal" class="fixed inset-0 z-50 hidden bg-black/80 p-4 flex items-center justify-center" onclick="closeCert()">
+    <div class="bg-white text-[#132227] rounded-2xl max-w-2xl w-full p-4 sm:p-6 shadow-2xl" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between gap-4 pb-3 border-b border-[#e4ecee]">
+        <h3 id="certTitle" class="font-bold text-sm sm:text-base text-[#0f2930]">Zertifikat</h3>
+        <button type="button" onclick="closeCert()" class="rounded-lg px-3 py-1.5 text-xs font-bold bg-[#f0f4f5] hover:bg-[#dce5e7] cursor-pointer">
+          Schließen
+        </button>
+      </div>
+      <div class="mt-4 max-h-[75vh] overflow-auto flex justify-center bg-[#f6f8f8] rounded-xl p-2">
+        <img id="certImage" src="" alt="" class="max-h-[70vh] w-auto object-contain rounded-lg" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Preis-Vorfilter
+    const areaSlider = document.getElementById('areaSlider');
+    const areaValue = document.getElementById('areaValue');
+    const priceRange = document.getElementById('priceRange');
+    const optCover = document.getElementById('optCover');
+    const optFurniture = document.getElementById('optFurniture');
+    const serviceButtons = document.querySelectorAll('.service-btn');
+    const calcSummaryInput = document.getElementById('calcSummaryInput');
+
+    let currentService = { name: 'Innenanstrich', min: 22, max: 34 };
+
+    function formatEur(n) {
+      return Math.round(n).toLocaleString('de-DE') + ' €';
+    }
+
+    function updateCalculator() {
+      const sqm = Number(areaSlider.value);
+      areaValue.textContent = sqm + ' m²';
+
+      let extras = 0;
+      const parts = [];
+      if (optCover.checked) { extras += 120; parts.push('Abdeckschutz (+120 €)'); }
+      if (optFurniture.checked) { extras += 180; parts.push('Möbel-Rücken (+180 €)'); }
+
+      const low = sqm * currentService.min + extras;
+      const high = sqm * currentService.max + extras;
+
+      priceRange.textContent = `ca. ${formatEur(low)} – ${formatEur(high)}`;
+      calcSummaryInput.value = `${currentService.name} | ${sqm} m² | ${parts.join(', ') || 'keine Extras'} | ca. ${formatEur(low)} – ${formatEur(high)}`;
+    }
+
+    serviceButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        serviceButtons.forEach((b) => {
+          b.className = 'service-btn rounded-xl border border-[#d2dde0] bg-[#f6f8f8] hover:border-[#0f2930] text-[#132227] text-xs font-semibold py-2.5 px-3 transition-colors cursor-pointer';
+        });
+        btn.className = 'service-btn rounded-xl border-2 border-[#b83b6f] bg-[#b83b6f] text-white text-xs font-bold py-2.5 px-3 transition-colors cursor-pointer';
+        currentService = { name: btn.dataset.service, min: Number(btn.dataset.min), max: Number(btn.dataset.max) };
+        updateCalculator();
+      });
+    });
+
+    areaSlider.addEventListener('input', updateCalculator);
+    optCover.addEventListener('change', updateCalculator);
+    optFurniture.addEventListener('change', updateCalculator);
+    updateCalculator();
+
+    // Zertifikat-Filter & Scroll
+    const filterButtons = document.querySelectorAll('.cert-filter-btn');
+    const certCards = document.querySelectorAll('.cert-card');
+    const certTrack = document.getElementById('certTrack');
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const f = btn.dataset.certFilter;
+        filterButtons.forEach((b) => {
+          b.className = 'cert-filter-btn rounded-full bg-white hover:bg-[#e5f6f4] text-[#1e333a] border border-[#d2dde0] text-xs font-semibold px-3.5 py-2 cursor-pointer';
+        });
+        btn.className = 'cert-filter-btn rounded-full bg-[#0f2930] text-white text-xs font-bold px-3.5 py-2 cursor-pointer';
+        certCards.forEach((card) => {
+          card.classList.toggle('hidden', f !== 'all' && card.dataset.cat !== f);
+        });
+        certTrack.scrollLeft = 0;
+      });
+    });
+
+    function scrollCerts(dir) {
+      certTrack.scrollBy({ left: dir * 320, behavior: 'smooth' });
+    }
+
+    function openCert(src, title) {
+      document.getElementById('certImage').src = src;
+      document.getElementById('certImage').alt = title;
+      document.getElementById('certTitle').textContent = title;
+      document.getElementById('certModal').classList.remove('hidden');
+    }
+
+    function closeCert() {
+      document.getElementById('certModal').classList.add('hidden');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeCert();
+    });
+
+    // Leistungs-Tabs
+    const leisData = [
+      {
+        badge: 'Fachbereich 01',
+        title: 'Maler- & Lackierarbeiten',
+        desc: 'Randscharfe Wand- und Deckenanstriche, saubere Lackierungen an Türen, Zargen, Fenstern und Heizkörpern sowie Tapezierarbeiten für Wohnungen, Häuser und Gewerbeflächen in Köln.',
+        points: ['• Hochwertige Innen- und Außenfarben', '• Sauberer Schutz von Böden, Möbeln und Beschlägen', '• Termintreue Ausführung durch den Innungsbetrieb'],
+        price: 'Richtwert im Rechner: ca. 22 € – 34 € / m²'
+      },
+      {
+        badge: 'Fachbereich 02',
+        title: 'Spachtel- & Wischtechniken',
+        desc: 'Edle Wand- und Raumgestaltungen mit glatten Spachteloberflächen, Kalk- und Feinputzen sowie individuellen Wischtechniken für ein ruhiges, wohnliches Raumgefühl.',
+        points: ['• Glatte Flächenvorbereitung bis zu gehobenen Ansprüchen', '• Individuelle Farb- und Strukturmuster vorab besprechbar', '• Ideal für Wohnzimmer, Flure und repräsentative Räume'],
+        price: 'Richtwert im Rechner: ca. 38 € – 58 € / m²'
+      },
+      {
+        badge: 'Fachbereich 03',
+        title: 'Bodenbeläge & Beschichtungen',
+        desc: 'Fachgerechte Untergrundvorbereitung und Verlegung moderner Bodenbeläge sowie widerstandsfähiger Beschichtungen – abgestimmt auf Nutzung und Belastung.',
+        points: ['• Urkunde Boden-Fachverleger (Gründorf)', '• Saubere Rand- und Sockelanschlüsse', '• Für Wohnräume, Praxen und gewerbliche Flächen'],
+        price: 'Richtwert im Rechner: ca. 32 € – 52 € / m²'
+      },
+      {
+        badge: 'Fachbereich 04',
+        title: 'Schimmel- & Feuchtesanierung',
+        desc: 'Gezielte Ursachenklärung, fachgerechte Schimmelbeseitigung und Abdichtung erdberührter Bauteile – durch TÜV SÜD-Sachkunde und Fachseminar-Nachweise untermauert.',
+        points: ['• TÜV SÜD Abdichtung & Feuchtesanierung (2016)', '• Fachseminar Schimmelpilze in Innenräumen (TÜV Rheinland)', '• Nachhaltige Lösung statt bloßem Überstreichen'],
+        price: 'Richtwert im Rechner: ca. 45 € – 72 € / m²'
+      },
+      {
+        badge: 'Fachbereich 05',
+        title: 'TÜV-geprüfte Innendämmung',
+        desc: 'Wenn eine Außendämmung nicht infrage kommt oder gezielt verbessert werden soll: geprüfte Sachkunde für Wärmebrücken, Feuchteverhalten und bauphysikalisch saubere Ausführung.',
+        points: ['• TÜV SÜD Zertifikat Sachkunde für Innendämmung', '• Berücksichtigung von Taupunkt und kapillaraktiven Systemen', '• Spürbar mehr Wohnkomfort in Kölner Alt- und Bestandsbauten'],
+        price: 'Richtwert im Rechner: ca. 45 € – 72 € / m²'
+      },
+      {
+        badge: 'Fachbereich 06',
+        title: 'Brandschutzbeschichtungen',
+        desc: 'Fachgerechte Verarbeitung zertifizierter Brandschutzsysteme (u. a. Sika Unitherm) für Gewerbe-, Büro- und Sonderbauten nach Vorgabe.',
+        points: ['• Nachweis Sika Unitherm Brandschutzseminar', '• Systemgerechte Schichtdicken und Verarbeitung', '• Verlässlicher Partner für Gewerbebetriebe & Hausverwaltungen'],
+        price: 'Individuelle Kalkulation nach Objekt & System'
+      },
+      {
+        badge: 'Fachbereich 07',
+        title: 'Bautrocknung & Wasserschaden',
+        desc: 'Strukturierte Unterstützung nach Wasser- oder Rohrbruchschäden: technische Trocknung und anschließende Wiederherstellung von Wänden, Decken und Oberflächen.',
+        points: ['• Nachweis Bautrocknung & Wasserschadensanierung', '• Saubere Koordination der Trocknungs- und Renovierungsphasen', '• Klare Dokumentation für Eigentümer und Versicherungen'],
+        price: 'Richtwert im Rechner: ca. 45 € – 72 € / m²'
+      },
+      {
+        badge: 'Fachbereich 08',
+        title: 'Fassaden- & Altbausanierung',
+        desc: 'Riss- und Putzsanierung, wetterbeständige Fassadenanstriche und umweltbewusste Ausführung als GSU-geprüfter Innungsbetrieb.',
+        points: ['• GSU-geprüfter Innungsbetrieb im Umweltschutz', '• Schutz vor Witterung, Algen und Feuchtigkeit', '• Langfristiger Werterhalt für Immobilie und Fassade'],
+        price: 'Individuelles Angebot nach Fassadenzustand'
+      }
+    ];
+
+    const leisTabs = document.querySelectorAll('.leis-tab');
+    leisTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const d = leisData[Number(tab.dataset.idx)];
+        leisTabs.forEach((t) => {
+          t.className = 'leis-tab w-full text-left px-4 py-3 rounded-xl font-semibold text-sm bg-[#f6f8f8] hover:bg-[#e5f6f4] text-[#132227] flex items-center justify-between cursor-pointer';
+          t.lastElementChild.className = 'text-[#81959b]';
+        });
+        tab.className = 'leis-tab w-full text-left px-4 py-3 rounded-xl font-bold text-sm bg-[#0f2930] text-white flex items-center justify-between cursor-pointer';
+        tab.lastElementChild.className = 'text-[#6be0d8]';
+
+        document.getElementById('leisBadge').textContent = d.badge;
+        document.getElementById('leisTitle').textContent = d.title;
+        document.getElementById('leisDesc').textContent = d.desc;
+        document.getElementById('leisPoints').innerHTML = d.points.map((p) => `<li>${p}</li>`).join('');
+        document.getElementById('leisPriceHint').textContent = d.price;
+      });
+    });
+
+    // Formular-Feedback
+    const quoteForm = document.getElementById('quoteForm');
+    const formFeedback = document.getElementById('formFeedback');
+    quoteForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const key = quoteForm.querySelector('input[name="access_key"]').value;
+      if (!key || key === 'DEIN_WEB3FORMS_ACCESS_KEY') {
+        formFeedback.className = 'text-xs font-medium rounded-xl px-3.5 py-2.5 bg-[#fdf1f6] text-[#8d2752] border border-[#f3b6cf]';
+        formFeedback.textContent = 'Demo-Modus: Vor Live-Schaltung deinen Web3Forms Access Key in der index.html eintragen.';
+        return;
+      }
+      try {
+        const res = await fetch(quoteForm.action, { method: 'POST', body: new FormData(quoteForm) });
+        const data = await res.json();
+        if (data.success) {
+          formFeedback.className = 'text-xs font-medium rounded-xl px-3.5 py-2.5 bg-[#e5f6f4] text-[#145551] border border-[#b2e4df]';
+          formFeedback.textContent = 'Anfrage inklusive Richtwert-Kalkulation wurde erfolgreich gesendet.';
+          quoteForm.reset();
+          updateCalculator();
+        } else {
+          throw new Error('Fehler');
+        }
+      } catch {
+        formFeedback.className = 'text-xs font-medium rounded-xl px-3.5 py-2.5 bg-[#fdf1f6] text-[#8d2752] border border-[#f3b6cf]';
+        formFeedback.textContent = 'Versand derzeit nicht möglich – bitte direkt anrufen unter 0221 / 36 14 61.';
+      }
+    });
+  </script>
+</body>
+</html>
